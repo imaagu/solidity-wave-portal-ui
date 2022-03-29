@@ -17,5 +17,28 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCGQx8sobxbVBJIGHlSb1mMnmpIM53F7f4",
+        authDomain: "web3-waveportal.firebaseapp.com",
+        projectId: "web3-waveportal",
+        storageBucket: "web3-waveportal.appspot.com",
+        messagingSenderId: "375696102623",
+        appId: "1:375696102623:web:d76a82e52a374cb22d856a",
+        measurementId: "G-NVFX46MGC0",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
